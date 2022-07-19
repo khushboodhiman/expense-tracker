@@ -1,0 +1,12 @@
+.expense-table {
+  width: 100%;
+  max-width: 750px;
+  margin: 60px auto;
+  border: solid 1px #213356;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000610;
+  gap: 28px;
+}

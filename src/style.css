@@ -1,0 +1,29 @@
+.heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #e7e7e7;
+}
+
+label {
+  margin-bottom: 12px;
+}
+
+input,
+select {
+  background-color: #000610;
+  border: solid 1px #213356;
+  height: 48px;
+  border-radius: 8px;
+  color: #e7e7e7;
+  padding: 12px;
+}
+
+.filter-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  color: #e7e7e7;
+}

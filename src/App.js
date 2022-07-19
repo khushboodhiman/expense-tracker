@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import AddExpense from "./Components/AddExpense";
+import ExpenseTable from "./Components/ExpenseTable";
+import { Expenses as expenses } from "./Expenses";
 
 function App() {
+  const [expenseData, setExpenseData] = useState(expenses);
+
+  const filterChangeHandler = (filteredExpenseItems) => {
+    setExpenseData(filteredExpenseItems);
+  };
+
+  const addNewExpenseHandler = (expense) => {
+    console.log("app", expense);
+    setExpenseData((prevExpense) => {
+      return [expense, ...prevExpense];
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AddExpense onAddNewExpense={addNewExpenseHandler} />
+      <ExpenseTable
+        expenseData={expenseData}
+        onFilterChange={filterChangeHandler}
+      />
+    </>
   );
 }
 

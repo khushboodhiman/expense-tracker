@@ -1,0 +1,12 @@
+.chart-wrapper {
+  border: solid 1px #213356;
+  width: 100%;
+  max-width: 850px;
+  border-radius: 10px;
+  padding: 24px;
+  color: #213356;
+  background-color: #8ca5d0;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}

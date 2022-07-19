@@ -1,0 +1,25 @@
+.filter-bar {
+  width: 18px;
+  height: 90%;
+  display: flex;
+  background-color: #bdd1e2;
+  border-radius: 10px;
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.filled-bar {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 138px;
+  position: absolute;
+}
+
+.label {
+  position: absolute;
+  bottom: -20%;
+  color: #00001a;
+}

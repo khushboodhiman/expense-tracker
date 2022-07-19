@@ -1,0 +1,21 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e7e7e7;
+  font-size: 18px;
+}
+
+.amount {
+  padding: 12px 36px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: solid 1px #213356;
+  background-color: #0d1b35;
+  color: #efefef;
+}
+
+.item-name {
+  margin-left: 2rem;
+  flex: 1 0;
+}

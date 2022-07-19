@@ -1,0 +1,39 @@
+.add-expense {
+  width: 100%;
+  max-width: 750px;
+  margin: 100px auto;
+  border: solid 1px #213356;
+  border-radius: 18px;
+  padding: 24px;
+  background-color: #000610;
+  color: #e7e7e7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-right: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.add-expense-btn {
+  width: 200px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 0;
+  background-color: #102348;
+  color: #fff;
+  font-weight: 500;
+}
+
+input {
+  color-scheme: dark;
+}
