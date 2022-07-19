@@ -68,7 +68,7 @@ function ExpenseTable(props) {
   const addMonthlyExpenses = () => {
     let newExpensesPerMonth = [...dummyExpenses.map((item) => ({ ...item }))];
     filteredData.forEach((item) => {
-      let currentMonth = "" item.date.getMonth();
+      let currentMonth = item.date.getMonth();
       newExpensesPerMonth[currentMonth].expense += Number(item.amount);
     });
     return newExpensesPerMonth;
