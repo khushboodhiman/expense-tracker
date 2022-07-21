@@ -5,8 +5,9 @@ import classes from "./Modal.module.css";
 const Overlay = (props) => {
   return (
     <div className={classes.modalWrapper}>
+      <div className={classes.background}></div>
       <header>
-        <h1>Expense Added</h1>
+        <h1 className={classes.heading}>Expense Added</h1>
       </header>
       <div className={classes.content}>
         Your expense has been added, we'll keep a track of it.

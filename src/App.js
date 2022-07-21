@@ -12,7 +12,7 @@ function App() {
   };
 
   const addNewExpenseHandler = (expense) => {
-    console.log("app", expense);
+    // console.log("app", expense);
     setExpenseData((prevExpense) => {
       return [expense, ...prevExpense];
     });
