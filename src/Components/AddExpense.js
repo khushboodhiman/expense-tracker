@@ -1,5 +1,6 @@
 import "./AddExpense.css";
 import ExpenseForm from "./ExpenseForm";
+import Card from "./Card";
 
 function AddExpense(props) {
   const newExpenseHandler = (expense) => {
@@ -8,9 +9,9 @@ function AddExpense(props) {
   };
 
   return (
-    <div className="add-expense">
+    <Card>
       <ExpenseForm onNewExpense={newExpenseHandler} />
-    </div>
+    </Card>
   );
 }
 

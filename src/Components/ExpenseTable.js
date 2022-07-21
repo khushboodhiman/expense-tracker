@@ -1,8 +1,8 @@
-import "./ExpenseTable.css";
 import Filters from "./Filters";
 import ExpenseList from "./ExpenseList";
 import { useEffect, useMemo, useState } from "react";
 import FilterChart from "./FilterChart";
+import Card from "./Card";
 
 function ExpenseTable(props) {
   const [filter, setFilter] = useState("All");
@@ -84,7 +84,7 @@ function ExpenseTable(props) {
 
   return (
     <>
-      <div className="expense-table">
+      <Card>
         <FilterChart items={expensesPerMonth} />
         <Filters
           text="Filter by Year"
@@ -92,7 +92,7 @@ function ExpenseTable(props) {
           options={["All", 2020, 2021, 2022, 2023]}
         />
         {<ExpenseList expenseData={filteredData} />}
-      </div>
+      </Card>
     </>
   );
 }
