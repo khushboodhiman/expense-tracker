@@ -13,16 +13,6 @@ label {
   gap: 18px;
 }
 
-.add-expense-btn {
-  width: 200px;
-  margin-top: 12px;
-  border-radius: 8px;
-  border: 0;
-  background-color: #102348;
-  color: #fff;
-  font-weight: 500;
-}
-
 input {
   color-scheme: dark;
 }

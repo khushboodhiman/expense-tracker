@@ -1,3 +1,20 @@
+form input {
+  margin-bottom: 18px;
+  width: 70%;
+}
+
+@media (max-width: 550px) {
+  form input {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 .heading {
   margin-bottom: 20px;
   font-size: 24px;
@@ -7,6 +24,12 @@
 
 label {
   margin-bottom: 12px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 input,
@@ -26,4 +49,19 @@ select {
 
 p {
   color: #e7e7e7;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary-btn {
+  width: 200px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 0;
+  background-color: #102348;
+  color: #fff;
+  font-weight: 500;
 }

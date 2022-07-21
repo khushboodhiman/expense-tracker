@@ -3,7 +3,7 @@ import "./FilterChart.css";
 
 function FilterChart(props) {
   const { items } = props;
-  console.log("items", items);
+  // console.log("items", items);
 
   const expenses = items.map((exp) => exp?.expense || 0);
   const maxExpense = Math.max(...expenses);

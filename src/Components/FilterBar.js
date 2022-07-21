@@ -1,7 +1,7 @@
 import "./FilterBar.css";
 
 function FilterBar(props) {
-  console.log("filter bar", props);
+  // console.log("filter bar", props);
   const { maxExpense, expense, label } = props;
   const fillHeight = expense
     ? Math.round((expense / maxExpense) * 100) + "%"

@@ -35,28 +35,28 @@ function ExpenseForm(props) {
       <h3 className="heading">Add New Expense Item</h3>
       <form onSubmit={addExpenseHandler}>
         <div className="input-wrapper">
-          <div>
-            <label>Expense Title</label>
-            <input type="string" name="title" ref={title} required="true" />
-          </div>
-          <div>
-            <label>Expense Amount</label>
-            <input type="number" name="amount" ref={amount} required="true" />
-          </div>
-          <div>
-            <label>Expense Date</label>
-            <input
-              type="date"
-              placeholder="DD-MM-YYYY"
-              min="2020-01-01T00:00"
-              max="2023-12-31T00:00"
-              name="expense-date"
-              ref={expenseDate}
-              required="true"
-            />
-          </div>
+          <label>Expense Title</label>
+          <input type="string" name="title" ref={title} required />
         </div>
-        <input type="submit" className="add-expense-btn" value="Add Expense" />
+        <div className="input-wrapper">
+          <label>Expense Amount</label>
+          <input type="number" name="amount" ref={amount} required />
+        </div>
+        <div className="input-wrapper">
+          <label>Expense Date</label>
+          <input
+            type="date"
+            placeholder="DD-MM-YYYY"
+            min="2020-01-01T00:00"
+            max="2023-12-31T00:00"
+            name="expense-date"
+            ref={expenseDate}
+            required
+          />
+        </div>
+        <div className="button-wrapper">
+          <input type="submit" className="primary-btn" value="Add Expense" />
+        </div>
       </form>
     </>
   );

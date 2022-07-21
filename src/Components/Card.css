@@ -11,3 +11,10 @@
   gap: 28px;
   color: #e7e7e7;
 }
+
+@media (max-width: 760px) {
+  .dark_card {
+    width: 90%;
+    margin: 60px 24px;
+  }
+}
