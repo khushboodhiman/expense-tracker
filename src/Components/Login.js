@@ -4,7 +4,7 @@ import { useContext, useRef } from "react";
 import { AuthContext, LoginCreds } from "../AuthState";
 
 function Login() {
-  const { isAuth, setAuth } = useContext(AuthContext);
+  const { setAuth } = useContext(AuthContext);
   const enteredEmail = useRef();
   const enteredPassword = useRef();
 

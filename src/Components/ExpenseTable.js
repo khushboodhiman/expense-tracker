@@ -80,6 +80,7 @@ function ExpenseTable(props) {
 
   useEffect(() => {
     setExpensesPerMonth([...addMonthlyExpenses()]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filteredData]);
 
   return (
